@@ -184,7 +184,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: flex;
+    display: block;
   }
 
   nav {
@@ -196,6 +196,10 @@ footer {
     width: 100%;
     background: var(--primary);
     padding: 1rem;
+  }
+
+  nav.active {
+    display: flex;
   }
 
   .hero-content h2 {
