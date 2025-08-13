@@ -186,15 +186,18 @@ footer {
   /* Show hamburger menu at top-right */
   .menu-toggle {
     display: block !important;
-    position: fixed !important; /* fix it fixed to viewport */
-    top: 20px !important; /* distance from top */
-    right: 20px !important; /* distance from right */
-    font-size: 2rem; /* make it bigger */
-    background: none; /* remove default button style */
-    border: none;
-    cursor: pointer;
-    z-index: 1000 !important; /* stay on top */
-    color: #333;
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    font-size: 2rem !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+    color: #333 !important;
   }
 
   /* Mobile navigation menu */
