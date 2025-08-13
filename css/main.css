@@ -185,15 +185,16 @@ footer {
 @media (max-width: 768px) {
   /* Show hamburger menu at top-right */
   .menu-toggle {
-    display: block;
-    position: fixed; /* fix it fixed to viewport */
-    top: 20px; /* distance from top */
-    right: 20px; /* distance from right */
+    display: block !important;
+    position: fixed !important; /* fix it fixed to viewport */
+    top: 20px !important; /* distance from top */
+    right: 20px !important; /* distance from right */
     font-size: 2rem; /* make it bigger */
     background: none; /* remove default button style */
     border: none;
     cursor: pointer;
-    z-index: 1000; /* stay on top */
+    z-index: 1000 !important; /* stay on top */
+    color: #333;
   }
 
   /* Mobile navigation menu */
