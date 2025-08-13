@@ -198,8 +198,6 @@ footer {
     border: none !important;
     cursor: pointer !important;
     z-index: 1000 !important;
-    color: #333 !important;
-    text-align: right !important; /* Overrides parent centering */
   }
 
   /* Mobile navigation menu */
