@@ -183,25 +183,37 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Show hamburger menu at top-right */
   .menu-toggle {
     display: block;
+    position: fixed; /* fix it relative to viewport */
+    top: 20px; /* distance from top */
+    right: 20px; /* distance from right */
+    font-size: 2rem; /* make it bigger */
+    background: none; /* remove default button style */
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* stay on top */
   }
 
+  /* Mobile navigation menu */
   nav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 80px;
+    position: fixed; /* overlay page */
+    top: 0;
     left: 0;
     width: 100%;
     background: var(--primary);
-    padding: 1rem;
+    padding: 5rem 1rem 1rem 1rem; /* leave space for hamburger */
+    z-index: 999; /* below the hamburger button */
   }
 
   nav.active {
     display: flex;
   }
 
+  /* Hero content responsive */
   .hero-content h2 {
     font-size: 2rem;
   }
