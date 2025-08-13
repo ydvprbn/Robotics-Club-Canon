@@ -219,10 +219,11 @@ footer {
 
   /* Hero content responsive */
   .hero-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-top: 60px;
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
