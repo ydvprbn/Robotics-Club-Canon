@@ -189,6 +189,7 @@ footer {
     position: fixed !important;
     top: 20px !important;
     right: 20px !important;
+    left: auto !important; /* Ensures right positioning */
     margin: 0 !important;
     padding: 0 !important;
     transform: none !important;
@@ -198,6 +199,7 @@ footer {
     cursor: pointer !important;
     z-index: 1000 !important;
     color: #333 !important;
+    text-align: right !important; /* Overrides parent centering */
   }
 
   /* Mobile navigation menu */
