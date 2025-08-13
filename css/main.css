@@ -56,8 +56,11 @@ header {
 
 @media (max-width: 768px) {
   nav {
-    display: flex;
-    gap: 20px;
+    display: flex !important;
+    flex-direction: column; /* stack links vertically for mobile */
+    gap: 10px;
+    background: var(--primary); /* so links are visible */
+    padding: 1rem;
   }
 }
 
