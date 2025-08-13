@@ -54,14 +54,9 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  nav {
-    display: flex !important;
-    flex-direction: column; /* stack links vertically for mobile */
-    gap: 10px;
-    background: var(--primary); /* so links are visible */
-    padding: 1rem;
-  }
+nav {
+  display: flex;
+  gap: 20px;
 }
 
 nav a {
@@ -189,7 +184,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 
   nav {
@@ -201,10 +196,6 @@ footer {
     width: 100%;
     background: var(--primary);
     padding: 1rem;
-  }
-
-  nav.active {
-    display: flex;
   }
 
   .hero-content h2 {
