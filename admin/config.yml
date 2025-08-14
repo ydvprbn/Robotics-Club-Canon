@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ydvprbn/Robotics-Club-Canon
+  branch: master
+  auth_endpoint: https://robotics-club-canon.vercel.app/auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
