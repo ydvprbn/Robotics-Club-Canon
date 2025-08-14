@@ -2,9 +2,8 @@ backend:
   name: github
   repo: ydvprbn/Robotics-Club-Canon
   branch: master
-  auth_endpoint: https://robotics-club-canon.vercel.app/auth
 
-media_folder: "images/uploads"
+media_folder: "images/uploads" 
 public_folder: "/images/uploads"
 
 collections:
@@ -17,3 +16,13 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events"
+    folder: "events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
